@@ -6,10 +6,11 @@
 ytd-watch-flexy[flexy][js-panel-height_]:not([fixed-panels]) #chat.ytd-watch-flexy:not([collapsed]) {
   display:flex;
   min-height: 0.8vh;
-  max-height: 89vh; 
+  max-height: 89vh; /* 高さの上限 */
   resize: vertical;
 }
-/* 閉じたとき */
+
+/* チャット欄を閉じたとき */
 ytd-watch-flexy[flexy][js-panel-height_]:not([fixed-panels]) #chat.ytd-watch-flexy[collapsed]{
   display:none;
   height: var(--ytd-watch-flexy-chat-max-height);
