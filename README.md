@@ -1,6 +1,6 @@
 # youtube用のCSS置き場  
 YouTubeの外観の変更できます  
-自分用に作成したものを公開しています
+自分用に作成したものを公開しているため、使用は自己責任でお願いします
 
 拡張機能の`Stylebot`に下記のファイルからコードをコピーし、貼り付けて使用してください  
 [Stylebot(Chrome拡張)](https://chromewebstore.google.com/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=ja)
