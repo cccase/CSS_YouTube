@@ -1,0 +1,23 @@
+/* スキップ時にシークバーがでないようにする */
+#movie_player .ytp-chrome-bottom {
+  display:none;
+}
+#movie_player .ytp-gradient-bottom {
+  display:none;
+}
+#movie_player .ytp-doubletap-ui-legacy.ytp-time-seeking
+{
+  display:none;
+}
+
+/* カーソルを合わせているときは表示 */
+#movie_player:hover .ytp-chrome-bottom {
+  display:inherit;
+}
+#movie_player:hover .ytp-gradient-bottom {
+  display:inherit;
+}
+#movie_player:hover .ytp-doubletap-ui-legacy.ytp-time-seeking
+{
+  display:inherit;
+}
