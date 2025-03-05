@@ -8,6 +8,7 @@ YouTubeの外観の変更できます
 ## コード一覧
 + [ホーム画面のサムネの表示数を変える](https://github.com/koseiccc/CSS_YouTube/blob/main/HomeGrid.txt)
 + [動画タイトルをすべて表示する](https://github.com/koseiccc/CSS_YouTube/blob/main/FullTitle.txt)
++ [スキップ時にシークバーがでないようにする](https://github.com/cccase/CSS_YouTube/blob/main/HideUIOnSkip.txt)
 
 
 ## 更新
