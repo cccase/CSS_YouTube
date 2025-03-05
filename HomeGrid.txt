@@ -2,6 +2,7 @@
 ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer:not([is-slim-grid]) {
   --ytd-rich-grid-items-per-row: 5; /* 列数 */
 }
+/* ショート動画を削除 */
 ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer{
   display: none;
 }
