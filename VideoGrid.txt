@@ -1,0 +1,29 @@
+/* 動画の幅 --------------------------------*/
+:root {
+  --home-columns: 6; /* ホーム画面の列数 */
+  --videos-columns: 5; /* チャンネルの動画欄 */
+  --videos-columns-width:calc(var(--ytd-grid-max-width) * 1.3); /* 動画欄の幅 */
+}
+/* ホーム画面の配置--- */
+ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer:not([is-slim-grid]) {
+  --ytd-rich-grid-items-per-row: var(--home-columns);/*列数*/
+}
+ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer{
+  display: none;
+}
+ytd-rich-item-renderer[rendered-from-rich-grid]:not([is-slim-grid]){
+  margin-left: 0.5vw;
+  margin-bottom: 1vh;
+}
+
+/* チャンネルの動画欄--- */
+ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer[is-slim-grid] {
+  --ytd-rich-grid-items-per-row: var(--videos-columns);/*列数*/
+}
+ytd-two-column-browse-results-renderer.grid:not(.grid-disabled){
+  max-width: var(--videos-columns-width);
+}
+ytd-two-column-browse-results-renderer.grid-6-columns{
+  width:var(--videos-columns-width);
+}
+/* /動画の幅 --------------------------------*/
