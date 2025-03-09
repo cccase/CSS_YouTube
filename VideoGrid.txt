@@ -8,12 +8,13 @@
 ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer:not([is-slim-grid]) {
   --ytd-rich-grid-items-per-row: var(--home-columns);/*列数*/
 }
-ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer{
-  display: none;
-}
 ytd-rich-item-renderer[rendered-from-rich-grid]:not([is-slim-grid]){
   margin-left: 0.5vw;
   margin-bottom: 1vh;
+}
+/* ショート動画を削除 */
+ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer{
+  display: none;
 }
 
 /* チャンネルの動画欄--- */
