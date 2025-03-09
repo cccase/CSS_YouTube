@@ -27,4 +27,7 @@ ytd-two-column-browse-results-renderer.grid:not(.grid-disabled){
 ytd-two-column-browse-results-renderer.grid-6-columns{
   width:var(--videos-columns-width);
 }
+ytd-rich-item-renderer[no-gutter-margins][rendered-from-rich-grid][is-in-first-column] {
+  margin-left: calc(var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin));
+}
 /* /動画の幅 --------------------------------*/
