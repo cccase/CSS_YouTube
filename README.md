@@ -10,6 +10,7 @@ YouTubeの外観の変更できます
 + [動画タイトルが省略されないようにする](https://github.com/cccase/CSS_YouTube/blob/main/FullTitle.txt)
 + [スキップ時にシークバーがでないようにする](https://github.com/cccase/CSS_YouTube/blob/main/HideUIOnSkip.txt)
 + [チャット欄の大きさを変更できるようにする](https://github.com/cccase/CSS_YouTube/blob/main/LargeChat.txt)
++ [関連動画の2つ目にでてくる関係ない動画を削除する](https://github.com/cccase/CSS_YouTube/blob/main/remove-unrelated-yt-video.txt)
 
 
 ## 更新
