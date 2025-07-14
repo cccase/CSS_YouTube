@@ -1,0 +1,4 @@
+/* 関連動画の2つ目を削除 */
+yt-lockup-view-model.ytd-item-section-renderer.lockup:nth-of-type(2){
+  display: none;
+}
