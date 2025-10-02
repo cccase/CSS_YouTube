@@ -1,0 +1,9 @@
+/* スキップ時にシークバーがでないようにする */
+.video-player__overlay .ScTransitionBase-sc-hx4quq-0{
+  display: none !important;
+}
+
+/* カーソルを合わせているときは表示 */
+.video-player__overlay:hover .ScTransitionBase-sc-hx4quq-0{
+  display: inherit !important;
+}
