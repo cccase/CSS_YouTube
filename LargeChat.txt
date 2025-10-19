@@ -1,17 +1,15 @@
 /* チャット欄を大きくし、大きさを変更できるようにします */
 /* チャット欄の右下を掴んで移動 */
-/* 閉じた後、もう一度チャット欄を開きたい場合は、概要欄右から開いてください */
 
-/* チャット欄の大きさを変える */
-ytd-watch-flexy[flexy][js-panel-height_]:not([fixed-panels]) #chat.ytd-watch-flexy:not([collapsed]) {
+/* チャット欄 */
+#chat.ytd-watch-flexy {
   display:flex;
   min-height: 0.8vh;
-  max-height: 89vh; /* 高さの上限 */
+  max-height: 89vh;
   resize: vertical;
 }
-
-/* チャット欄を閉じたとき */
-ytd-watch-flexy[flexy][js-panel-height_]:not([fixed-panels]) #chat.ytd-watch-flexy[collapsed]{
-  display:none;
-  height: var(--ytd-watch-flexy-chat-max-height);
+/* 閉じたとき */
+#chat.ytd-watch-flexy[collapsed]{
+  max-height: 4vh;
+  resize: none;
 }
