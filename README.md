@@ -6,11 +6,14 @@ YouTubeの外観の変更できます
 [Stylebot (Chrome拡張)](https://chromewebstore.google.com/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=ja)
 
 ## コード一覧
+### CSS
 + [ホーム画面のサムネの表示数を変える](https://github.com/cccase/CSS_YouTube/blob/main/VideoGrid.txt)
 + [動画タイトルが省略されないようにする](https://github.com/cccase/CSS_YouTube/blob/main/FullTitle.txt)
 + [スキップ時にシークバーがでないようにする](https://github.com/cccase/CSS_YouTube/blob/main/HideUIOnSkip_youtube.txt)
 + [チャット欄の大きさを変更できるようにする](https://github.com/cccase/CSS_YouTube/blob/main/LargeChat.txt)
 + [関連動画の2つ目にでてくる関係ない動画を削除する](https://github.com/cccase/CSS_YouTube/blob/main/remove-unrelated-yt-video.txt)
+### JavaScript
++ [自動生成されるミックスリストを削除する](https://github.com/cccase/CSS_YouTube/blob/main/JavaScript/mixlist_remover.txt)
 
 
 ## 更新
