@@ -13,7 +13,7 @@ YouTubeの外観の変更できます
 + [チャット欄の大きさを変更できるようにする](https://github.com/cccase/CSS_YouTube/blob/main/LargeChat.txt)
 + [関連動画の2つ目にでてくる関係ない動画を削除する](https://github.com/cccase/CSS_YouTube/blob/main/remove-unrelated-yt-video.txt)
 ### JavaScript
-+ [自動生成されるミックスリストを削除する](https://github.com/cccase/CSS_YouTube/blob/main/JavaScript/mixlist_remover.txt)
++ [自動生成されるミックスリストを削除する](https://github.com/cccase/CSS_YouTube/blob/main/JavaScript/mixlist-remover.txt)
 
 
 ## 更新
