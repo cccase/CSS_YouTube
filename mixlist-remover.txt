@@ -1,0 +1,79 @@
+// mixlist-remover
+// これはJavaScriptです
+// tampermonkey などを利用してください
+
+
+const AUTO_MIX_LIST_PREFIX = 'RD';
+
+/**
+ * URLからリストIDを抽出し、自動ミックスリストか判定する
+ */
+function isAutoMixList(href) {
+    const listIndex = href.indexOf('&list=');
+
+    if (listIndex === -1) {
+        return false;
+    }
+
+    const listIdStart = listIndex + 6;
+    const nextAmpersandIndex = href.indexOf('&', listIdStart);
+
+    let listId;
+    if (nextAmpersandIndex !== -1) {
+        listId = href.substring(listIdStart, nextAmpersandIndex);
+    } else {
+        listId = href.substring(listIdStart);
+    }
+
+    return listId.startsWith(AUTO_MIX_LIST_PREFIX);
+}
+
+// mousedownイベントをキャプチャリングフェーズで監視
+document.addEventListener('mousedown', function(event) {
+    const link = event.target.closest('a');
+
+    if (!link) {
+        return;
+    }
+
+    let originalHref = link.getAttribute('href');
+
+    // 自動ミックスリストのリンクであるかの判定
+    if (originalHref && originalHref.startsWith('/watch?v=') && originalHref.includes('&list') && isAutoMixList(originalHref)) {
+
+        const listParamIndex = originalHref.indexOf('&list');
+        const cleanHref = originalHref.substring(0, listParamIndex);
+
+        // 1. 左クリック (event.button === 0)
+        if (event.button === 0) {
+            // 左クリックは安定動作を維持
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            const cleanUrl = new URL(cleanHref, window.location.origin).href;
+            window.location.replace(cleanUrl);
+        }
+
+        // 2. ホイールクリック (event.button === 1)
+        else if (event.button === 1) {
+
+            // リンクの href 属性をクリーンなURLに書き換える
+            link.setAttribute('href', cleanHref);
+
+            // 新しいタブで開くことを明示するために target="_blank" を追加
+            link.setAttribute('target', '_blank');
+
+            // ブラウザのデフォルト動作（新しいタブで開く）に委ねる
+
+            // リンクがクリックされた後、href属性を元に戻すための処理を遅延実行
+            setTimeout(() => {
+                // target属性を元に戻す (クリーンアップ)
+                link.removeAttribute('target');
+            }, 100);
+
+            // イベントの伝播は阻止し、YouTube側のハンドラが介入するのを防ぐ
+            event.stopImmediatePropagation();
+
+            return;
+        }
+    }
+}, true); // キャプチャリングフェーズで実行
