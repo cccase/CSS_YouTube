@@ -29,7 +29,7 @@ function isAutoMixList(href) {
 }
 
 // mousedownイベントをキャプチャリングフェーズで監視
-document.addEventListener('mousedown', function(event) {
+document.addEventListener('mouseup', function(event) {
     const link = event.target.closest('a');
 
     if (!link) {
