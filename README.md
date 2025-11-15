@@ -12,7 +12,7 @@ YouTubeの外観の変更できます
 + [スキップ時にシークバーがでないようにする](https://github.com/cccase/CSS_YouTube/blob/main/HideUIOnSkip_youtube.txt)
 + [チャット欄の大きさを変更できるようにする](https://github.com/cccase/CSS_YouTube/blob/main/LargeChat.txt)
 + [関連動画の2つ目にでてくる関係ない動画を削除する](https://github.com/cccase/CSS_YouTube/blob/main/remove-unrelated-yt-video.txt)
-+ [関連動画のUIを今までのものに戻す](https://github.com/cccase/CSS_YouTube/blob/main/Classic-Video-List.txt)
++ ~[関連動画のUIを今までのものに戻す](https://github.com/cccase/CSS_YouTube/blob/main/Classic-Video-List.txt)~ （修正中）
 ### JavaScript
 + [自動生成されるミックスリストを削除する](https://github.com/cccase/CSS_YouTube/blob/main/JavaScript/mixlist-remover.txt)
 
