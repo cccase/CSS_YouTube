@@ -1,0 +1,74 @@
+/* youtubeの関連動画のUIを元に戻す */
+
+
+.yt-lockup-view-model__content-image {
+    display: flex;
+    flex: none;
+    padding-right: 16px;
+    justify-content: center;
+    width: 168px !important;
+    max-width: 500px;
+}
+
+.yt-lockup-view-model--vertical,
+.yt-lockup-view-model--horizontal {
+    /* flex-direction: column; */
+    flex-direction: row;
+    height: inherit;
+}
+.yt-lockup-view-model__metadata {
+    flex: 1;
+}
+.yt-lockup-metadata-view-model__avatar {
+    display: none;
+}
+ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer {
+    --ytd-item-section-item-margin: 8px !important;
+}
+
+.yt-content-metadata-view-model__delimiter--standalone {
+    display: none;
+}
+
+.yt-content-metadata-view-model__metadata-row--metadata-row-inline {
+    display: flex !important;
+}
+
+.yt-lockup-view-model--vertical .yt-lockup-view-model__content-image {
+    padding-bottom: 8px;
+    align-items: unset;
+}
+
+
+/* 1か2、どちらかのみをコピー */
+/* 1. タイトルを省略せずに表示する */
+.yt-lockup-metadata-view-model--standard .yt-lockup-metadata-view-model__title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    max-height: unset !important;
+  -webkit-line-clamp: unset !important;
+  -wordwrap: break-word !important;
+}
+/* 2. タイトルを省略する（通常のレイアウト）
+.yt-lockup-metadata-view-model--standard .yt-lockup-metadata-view-model__title {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 500;
+    overflow: hidden;
+    max-height: 4rem;
+    -webkit-line-clamp: 2;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+*/
