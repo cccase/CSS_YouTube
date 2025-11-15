@@ -1,7 +1,7 @@
 /* youtubeの関連動画のUIを元に戻す */
 
 
-.yt-lockup-view-model__content-image {
+#secondary .yt-lockup-view-model__content-image {
     display: flex;
     flex: none;
     padding-right: 16px;
@@ -10,38 +10,48 @@
     max-width: 500px;
 }
 
-.yt-lockup-view-model--vertical,
-.yt-lockup-view-model--horizontal {
+#secondary .yt-lockup-view-model--vertical,
+#secondary .yt-lockup-view-model--horizontal {
+    /* flex-direction: column; */
     flex-direction: row;
     height: inherit;
 }
-.yt-lockup-view-model__metadata {
+
+
+#secondary .yt-lockup-view-model__metadata {
     flex: 1;
 }
-.yt-lockup-metadata-view-model__avatar {
+#secondary .yt-lockup-metadata-view-model__avatar {
     display: none;
 }
-ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer {
+#secondary ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer {
     --ytd-item-section-item-margin: 8px !important;
 }
 
-.yt-content-metadata-view-model__delimiter--standalone {
+
+
+
+
+#secondary .yt-content-metadata-view-model__delimiter--standalone {
     display: none;
 }
 
 .yt-content-metadata-view-model__metadata-row--metadata-row-inline {
-    display: flex !important;
+    display: flex;
 }
 
-.yt-lockup-view-model--vertical .yt-lockup-view-model__content-image {
+#secondary .yt-lockup-view-model--vertical .yt-lockup-view-model__content-image {
     padding-bottom: 8px;
     align-items: unset;
 }
 
 
+
+
+
 /* 1か2、どちらかのみをコピー */
 /* 1. タイトルを省略せずに表示する */
-.yt-lockup-metadata-view-model--standard .yt-lockup-metadata-view-model__title {
+#secondary .yt-lockup-metadata-view-model--standard .yt-lockup-metadata-view-model__title {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 1.4rem;
     line-height: 2rem;
@@ -56,7 +66,7 @@ ytd-item-section-renderer.ytd-watch-next-secondary-results-renderer {
   -wordwrap: break-word !important;
 }
 /* 2. タイトルを省略する（通常のレイアウト）
-.yt-lockup-metadata-view-model--standard .yt-lockup-metadata-view-model__title {
+#secondary .yt-lockup-metadata-view-model--standard .yt-lockup-metadata-view-model__title {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 1.4rem;
     line-height: 2rem;
