@@ -12,7 +12,6 @@
 
 .yt-lockup-view-model--vertical,
 .yt-lockup-view-model--horizontal {
-    /* flex-direction: column; */
     flex-direction: row;
     height: inherit;
 }
